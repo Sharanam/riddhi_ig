@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    background: linear-gradient(270deg, rgba(82, 29, 145, 1), #F2F4F5 60%);
+}
+
+section.intro {
+    background: transparent;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tooltip {
+    position: relative;
+    padding: 0.5rem;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid #a6f8e0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #a6f8e0;
+    border-bottom-color: transparent;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+}
+
+section.mob-app dd {
+    min-height: 80vh;
+}
+
+section.mob-app dd .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0;
+    padding: 0;
+    grid-auto-flow: column-reverse;
+}
+
+section.mob-app dd {
+    color: #FFAD00;
+}
+
+section.mob-app img {
+    object-fit: cover;
+    width: 40vw;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 9px 6px 12px 0px rgb(0 0 0 / 50%);
+    --webkit-box-shadow: 9px 6px 12px 0px rgb(0 0 0 / 50%);
+}
+
+section.mob-app {
+    background: #a6f8e0;
+    color: #000;
+}
+
+section.expectations {
+    background-color: #521D91;
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #a6f8e0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffae006c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFAD00;
+}
